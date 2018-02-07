@@ -1,0 +1,138 @@
+//歌曲选歌列表
+.song-item {
+	&:active {
+		background-color: #f8f8f8;
+	}
+	height: 40px;
+
+	.table-cell {
+		padding: 5px 0;
+	}
+
+	.name {
+		font-size: 28rem / $unit;
+	}
+	.num {
+		width: 2rem;
+		text-align: center;
+		color: #aaa;
+	}
+
+	.op {
+		width: 2rem;
+		text-align: center;
+		border-bottom: 1px solid #eee;
+	}
+	.op-btn {
+		background-size: 80%;
+		width: 100%;
+	    height: 100%;
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: 45%;
+	    background-color: transparent;
+	}
+	.mike {
+		background-image: url(assets/img/icon_mike.png);
+		
+	    &.disabled {
+	    	background-image: url(assets/img/icon_mike_disabled.png);
+	    }
+	}
+	.del {
+		background-image: url(assets/img/delete.png);
+		background-size: 30%;
+	}
+	.text-light-grey {
+		color: #aaa;
+		font-size: 12rem / $unit;
+	}
+	.content {
+		border-bottom: 1px solid #eee;
+		.tag {
+			display: inline-block;
+			padding: 1px 3px;
+			border-radius: .25rem;
+			font-size: 12rem / $unit;
+		}
+		.tag-C {
+			color: #609adb;
+			border: 1px solid #609adb;
+		}
+		.tag-D {
+			color: #609adb;
+			border: 1px solid #609adb;
+		}
+		.tag-F {
+			color: #609adb;
+			border: 1px solid #609adb;
+		}
+		.tag-M {
+			color: #609adb;
+			border: 1px solid #609adb;
+		}
+		.tag-S {
+			color: #609adb;
+			border: 1px solid #609adb;
+		}
+		.tag-X {
+			color: #f0c254;
+			border: 1px solid #f0c254;
+		}
+	}
+}
+
+.singers-page {
+	.search-holder {
+		overflow: hidden;
+		background-image: url('assets/img/song_index_banner.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		.search-div {
+			display: flex;
+			margin: 1rem .5rem;
+		}
+		.search-input {
+			display: flex;
+			flex: 1;
+			height: 1.4rem;
+		    padding: .5rem;
+		    background: #fff;
+		    border-radius: 1rem;
+		}
+		.search-btn {
+			width: 2.5rem;
+			background: none;
+			border: none;
+			color: #fff;
+			font-size: .8rem;
+		}
+	}
+	.search-result {
+		.item {
+			line-height: 2rem;
+			border-bottom: 1px solid #f5f5f5;
+			padding-left: .5rem;
+		}
+		.alink {
+			display: block;
+		}
+	}
+}
+
+.h3-title {
+	color: #666;
+	background-color: #f5f5f5;
+	line-height: 2rem;
+	text-indent: .5rem;
+}
+
+
+.loading-more {
+	text-align: center;
+	height: 2rem;
+	line-height: 2rem;
+	img {
+		width: 1.5rem;
+	}
+}
